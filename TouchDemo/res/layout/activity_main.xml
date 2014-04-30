@@ -1,0 +1,15 @@
+<com.tomkey.touch.demo.Group xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.tomkey.touch.demo.Item
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:text="点我测试click me to test" android:textSize="25sp">
+    </com.tomkey.touch.demo.Item>
+
+</com.tomkey.touch.demo.Group>
