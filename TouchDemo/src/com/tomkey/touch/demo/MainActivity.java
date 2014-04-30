@@ -31,8 +31,8 @@ public class MainActivity extends Activity {
                 Log.d(TAB, "dispatchTouchEvent action:ACTION_UP");
                 break;
         }
-        super.dispatchTouchEvent(ev);
-        return true;
+        return super.dispatchTouchEvent(ev);
+//        return false;
     }
 
     @Override
@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
                 Log.d(TAB, "---onTouchEvent action:ACTION_UP");
                 break;
         }
-        super.onTouchEvent(event);
-        return false;
+        return super.onTouchEvent(event);
+//        return false;
     }
 }

@@ -26,21 +26,21 @@ public class Item extends TextView {
             Log.d(TAB, "dispatchTouchEvent action:ACTION_UP");
             break;
         }
-        super.dispatchTouchEvent(event);
-        return false;
+        return super.dispatchTouchEvent(event);
     }
  
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         switch(event.getAction()) {
         case MotionEvent.ACTION_DOWN:
+//            getParent().requestDisallowInterceptTouchEvent(true);
             Log.d(TAB, "---onTouchEvent action:ACTION_DOWN");
-            break;
+            return true;
+//            break;
         case MotionEvent.ACTION_UP:
             Log.d(TAB, "---onTouchEvent action:ACTION_UP");
             break;
         }
-        super.onTouchEvent(event);
         return false;
     }
 }

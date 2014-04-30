@@ -26,8 +26,8 @@ public class Group extends LinearLayout {
             Log.d(TAB, "dispatchTouchEvent action:ACTION_UP");
             break;
         }
-        super.dispatchTouchEvent(ev);
-        return false;
+        return super.dispatchTouchEvent(ev);
+//        return false;
     }
  
     @Override
@@ -41,7 +41,7 @@ public class Group extends LinearLayout {
             Log.d(TAB, "onInterceptTouchEvent action:ACTION_UP");
             break;
         }
-        return true;
+        return false;
     }
  
     @Override
@@ -54,7 +54,7 @@ public class Group extends LinearLayout {
             Log.d(TAB, "---onTouchEvent action:ACTION_UP");
             break;
         }
-        super.onTouchEvent(event);
-        return false;
+        return super.onTouchEvent(event);
+//        return true;
     }
 }
